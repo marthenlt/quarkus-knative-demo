@@ -1,0 +1,19 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: quarkus-knative-demo
+  namespace: default
+spec:
+  runLatest:
+    configuration:
+      revisionTemplate:
+        metadata:
+          annotations:
+            #autoscaling.knative.dev/minScale: "1"
+            #autoscaling.knative.dev/target: "4" 
+        spec:
+          container:
+            image: docker.io/marthenl/quarkus-knative-demo:latest
+            env:
+            #- name: message
+            #  value: "version 2.0"
