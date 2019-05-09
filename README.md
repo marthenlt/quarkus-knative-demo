@@ -10,7 +10,7 @@ Taste of Serverless Application Development using below stacks:
 The video can be found here:
 https://youtu.be/-c1Sh-1uAeM
 
-Thanks,
+
 Marthen
-9 May 2019
+
 
